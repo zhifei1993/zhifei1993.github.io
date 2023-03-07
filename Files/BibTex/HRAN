@@ -1,7 +1,0 @@
-@article{HRAN,
-  author = {Li, Zhifei and Zhang, Zhaoli and Liu, Hai and Xiong, N. N.},
-  title = {Learning Knowledge Graph Embedding with Heterogeneous Relation Attention Networks},
-  journal = {IEEE Transactions on Neural Networks and Learning Systems (TNNLS)},
-  DOI = {10.1109/TNNLS.2021.3055147},
-  year = {2021}
-}

@@ -1,8 +1,0 @@
-@article{M-DCN,
-   author = {Zhang, Zhaoli and Li, Zhifei and Liu, Hai and Xiong, N. N.},
-   title = {Multi-scale Dynamic Convolutional Network for Knowledge Graph Embedding},
-   journal = {IEEE Transactions on Knowledge and Data Engineering (TKDE)},
-   pages = {1-13},
-   DOI = {10.1109/TKDE.2020.3005952},
-   year = {2020}
-}
