@@ -141,12 +141,20 @@ var _hmt = _hmt || [];
 <A NAME="Introduction"><h2><i class="fa-solid fa-address-card"></i> <span style="font-size: 22px;r", class="small-caps">Introduction</span></h2></A>
 <ul style="text-align:justify; text-justify:inter-ideograph; padding-left:20px; padding-right:20px;">
     
-    Zhifei Li received M.S. and Ph.D. degrees from the National Engineering Research Center for E-Learning at Central China Normal University in 2018 and 2021, respectively. Since October 2023, he has been an Associate Professor at the School of Computer Science, Hubei University. He has authored over thirty peer-reviewed papers in international journals and conferences such as TKDE, TNNLS, TMM, TKDD, and AAAI, with three papers selected as ESI highly cited papers. Additionally, he frequently reviews for international journals and conferences, including TKDE, TNNLS, TKDD, and AAAI. His current research interests include knowledge graphs and recommendation systems.
+    Zhifei Li received M.S. and Ph.D. degrees from the National Engineering Research Center for E-Learning at Central China Normal University in 2018 and 2021, respectively. Since October 2023, he has been an Associate Professor at the School of Computer Science, Hubei University. He has authored over fourty peer-reviewed papers in international journals and conferences such as TKDE, SCIS, TNNLS, TMM, TKDD, INFFUS, and AAAI, with three papers selected as ESI highly cited papers. Additionally, he frequently reviews for international journals and conferences, including TKDE, TNNLS, TKDD, and AAAI. His current research interests include knowledge graphs and recommendation systems.
 
 </ul>
 
 
+<a name="News"><h2><i class="fa-solid fa-newspaper"></i> News</h2></a>
 
+<div style="max-height: 260px; overflow-y: auto;">
+
+<ul style="text-align:justify; text-justify:inter-ideograph; padding-left:30px; padding-right:20px; list-style: disc;">
+    <li>2026.02 &nbsp;&nbsp;&nbsp;One paper is accepted by ACM TKDD.</li>
+
+</ul>
+</div>
 
 
 <A NAME="Career"><h2><i class="fa-solid fa-briefcase"></i> <span style="font-size: 22px;", class="small-caps">Experience</span></h2></A>
@@ -221,179 +229,198 @@ var _hmt = _hmt || [];
 
 
 
-<A NAME="Publications"><h2><i class="fa-solid fa-file-signature"></i> <span style="font-size: 22px;", class="small-caps">Publication</span></h2></A>
+<!-- <A NAME="Publications"><h2><i class="fa-solid fa-file-signature"></i> <span style="font-size: 22px;", class="small-caps">Publication</span></h2></A>
 <ol style="text-align:justify; text-justify:inter-ideograph; padding-left:30px; padding-right:20px;">
     (Note: * Corresponding author，<a href="https://scholar.google.com/citations?hl=cn&user=aC2qAuEAAAAJ" target="_blank" style="color:#000;"><i class="fa-brands fa-google-scholar"></i> Google Scholar Citations 1000+</a>)</p>
- 
-
-    <li>
-        Zhang Z, <b>Li Z*</b>, et al.
-        Multi-scale Dynamic Convolutional Network for Knowledge Graph Embedding[J].
-        <i>IEEE Transactions on Knowledge and Data Engineering</i>,
-        2022, 34(5): 2335-2347.
-        (<b>CCF A, Highly Cited Paper</b>)
-    </li>
 
 
-    <li>
-        <b>Li Z</b>, Liu H, Zhang Z, et al.
-        Learning Knowledge Graph Embedding with Heterogeneous Relation Attention Networks[J].
-        <i>IEEE Transactions on Neural Networks and Learning Systems</i>,
-        2022, 33(8): 3961-3973.
-        (<b>CCF B, Highly Cited Paper</b>)
-    </li>
-    
+</ol>  -->
 
-    <li>
-        <b>Li Z</b>, Zhang Q, Zhu F, et al. 
-        Knowledge Graph Representation Learning with Simplifying Hierarchical Feature Propagation[J]. 
-        <i>Information Processing & Management</i>,
-        2023, 60(4): 103348.
-        (<b>CCF B, Highly Cited Paper</b>)
-    </li>
+<!-- ===================== Publications ===================== -->
+<A NAME="Publications">
+  <h2><i class="fa-solid fa-file-signature"></i> Publication</h2>
+</A>
 
 
-    <li>
-        Luo X, Zhang Y*, et al, <b>Li Z*</b>. 
-        Noise-augmented Multi-modal Entity Alignment with Confidence-based Dynamic Fusion[J]. 
-        <i>SCIENCE CHINA Information Sciences</i>,
-        2026. DOI: 10.1007/s11432-025-4721-2.
-        (<b>CCF A</b>)
-    </li>
+  <p style="text-align:justify; padding-left:35px; padding-top:15px">
+    (Note: * Corresponding author，<a href="https://scholar.google.com/citations?hl=cn&user=aC2qAuEAAAAJ" target="_blank" style="color:#000;"><i class="fa-brands fa-google-scholar"></i> Google Scholar Citations 1000+</a>)</p>
 
 
-    <li>
-        Jian Y, Luo X, <b>Li Z*</b>, et al.
-        APKGC: Noise-enhanced Multi-Modal Knowledge Graph Completion with Attention Penalty[C].
-        <i>Proceedings of the 39th AAAI Conference on Artificial Intelligence (AAAI)</i>,
-        2025: 15005-15013.
-        (<b>CCF A, Oral paper</b>)
-    </li>
+<style>
+  /* 分类区：无背景框；与论文列表左右对齐 */
+  .pub-filters{
+    box-sizing: border-box;
+    width: 100%;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px 16px;
+    align-items:flex-start;
+    justify-content:flex-start;
+    margin: 10px 0 6px 0;
+    padding: 6px 20px 6px 35px; /* 与 <ol> 左右 padding 对齐 */
+  }
+
+  /* 关键：让“研究方向”和“发表年份”各占一行（换行） */
+  .pub-filter-group{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    align-items:center;
+    width: 100%;
+  }
+
+  .pub-filter-label{
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 4px;
+    opacity: .85;
+    white-space: nowrap;
+  }
+
+  .pub-btn{
+    cursor:pointer;
+    border: 1px solid rgba(0,0,0,.18);
+    background: #fff;
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: 15px;
+    line-height: 1;
+    transition: all .15s ease;
+    user-select:none;
+  }
+  .pub-btn:hover{ transform: translateY(-1px); }
+  .pub-btn.active{
+    border-color:#214b8d;
+/*    background:#214b8d;*/
+    color:#214b8d;
+  }
+  .pub-hidden{ display:none !important; }
+</style>
+
+<!-- Filters (no background box) -->
+<div class="pub-filters" id="pubFilters">
+  <div class="pub-filter-group" id="topicFilters">
+    <span class="pub-filter-label">Task：</span>
+    <button class="pub-btn active" data-topic="all" type="button">All</button>
+    <button class="pub-btn" data-topic="kg" type="button">Knowledge Graph</button>
+    <button class="pub-btn" data-topic="vqa" type="button">Question Answering</button>
+    <button class="pub-btn" data-topic="rec" type="button">Recommendation Systems</button>
+    <!-- <button class="pub-btn" data-topic="cn" type="button">国内期刊</button> -->
+  </div>
+
+  <div class="pub-filter-group" id="yearFilters">
+    <span class="pub-filter-label">Year：</span>
+    <button class="pub-btn active" data-year="all" type="button">All</button>
+    <!-- 年份按钮由 JS 自动生成：2024+ 单独，<=2023 合并为“2023年及以前” -->
+  </div>
+</div>
+
+<ol style="text-align:justify; text-justify:inter-ideograph; padding-left:35px; padding-right:20px;">
 
 
-    <li>
-        <b>Li Z</b>, Qin Z, Luo X, et al. 
-        MyGram: Modality-aware Graph Transformer with Global Distribution for Multi-modal Entity Alignment[C]. 
-        <i>Proceedings of the AAAI Conference on Artificial Intelligence</i>, 
-        2026. 
-        (<b>CCF A, Accepted</b>)
-    </li>
+
+  <!-- ===================== 知识图谱方向 ===================== -->
+  <p class="pub-section" data-topic="kg" style="text-align:center; padding-top:20px"><b>Knowledge Graph</b></p>
+
+  <li class="pub-item" data-topic="kg">
+    Zhang Z, <b>Li Z*</b>, et al.
+    Multi-scale Dynamic Convolutional Network for Knowledge Graph Embedding[J].
+    <i>IEEE Transactions on Knowledge and Data Engineering</i>,
+    2022, 34(5): 2335-2347.
+    (<b>CCF A, ESI highly cited paper</b>)
+  </li>
+
+<li class="pub-item" data-topic="kg">
+    Luo X, Zhang Y*, et al, <b>Li Z*</b>.
+    Noise-augmented Multi-modal Entity Alignment with Confidence-based Dynamic Fusion[J].
+    <i>SCIENCE CHINA Information Sciences</i>,
+    2026. DOI: 10.1007/s11432-025-4721-2.
+    (<b>CCF A</b>)
+  </li>
 
 
-    <li>
-        <b>Li Z</b>, Wang Y, Xiong C, et al. 
-        MacVQA: Adaptive Memory Allocation and Global Noise Filtering for Continual Visual Question Answering[C]. 
-        <i>Proceedings of the AAAI Conference on Artificial Intelligence</i>, 
-        2026. 
-        (<b>CCF A, Accepted</b>)
-    </li>
+  <li class="pub-item" data-topic="kg">
+    <b>Li Z</b>, Liu H, Zhang Z, et al.
+    Learning Knowledge Graph Embedding with Heterogeneous Relation Attention Networks[J].
+    <i>IEEE Transactions on Neural Networks and Learning Systems</i>,
+    2022, 33(8): 3961-3973.
+    (<b>CCF B, ESI highly cited paper</b>)
+  </li>
+
+  <li class="pub-item" data-topic="kg">
+    <b>Li Z</b>, Zhang Q, Zhu F, et al.
+    Knowledge Graph Representation Learning with Simplifying Hierarchical Feature Propagation[J].
+    <i>Information Processing &amp; Management</i>,
+    2023, 60(4): 103348.
+    (<b>CCF B, ESI highly cited paper</b>)
+  </li>
+
+  <li class="pub-item" data-topic="kg">
+    <b>Li Z</b>, Qin Z, Luo X, et al.
+    MyGram: Modality-aware Graph Transformer with Global Distribution for Multi-modal Entity Alignment[C].
+    <i>Proceedings of the AAAI Conference on Artificial Intelligence</i>,
+    2026.
+    (<b>CCF A, Accepted</b>)
+  </li>
+
+  <li class="pub-item" data-topic="kg">
+    Jian Y, Luo X, <b>Li Z*</b>, et al.
+    APKGC: Noise-enhanced Multi-Modal Knowledge Graph Completion with Attention Penalty[C].
+    <i>Proceedings of the 39th AAAI Conference on Artificial Intelligence</i>,
+    2025: 15005-15013.
+    (<b>CCF A, Oral paper</b>)
+  </li>
+
+<li class="pub-item" data-topic="kg">
+    Xiong C, Hu J, et al, <b>Li Z*</b>.
+    HiMod: Hierarchical Modeling with Graph Perturbation for Enhanced Inductive Knowledge Graph Reasoning[J].
+    <i>ACM Transactions on Knowledge Discovery from Data</i>,
+    2026.
+    (<b>CCF B, Accepted</b>)
+  </li>
+
+  <li class="pub-item" data-topic="kg">
+    Jian Y, Zhang M, et al, <b>Li Z*</b>.
+    Adaptive Modality Interaction Transformer for Multimodal Knowledge Graph Completion[J].
+    <i>ACM Transactions on Knowledge Discovery from Data</i>,
+    2025, 19(8): 1-24.
+    (<b>CCF B</b>)
+  </li>
+
+  <li class="pub-item" data-topic="kg">
+    Zhang Y, Luo X, et al, <b>Li Z*</b>.
+    Graph Structure Prefix Injection Transformer for Multi-modal Entity Alignment[J].
+    <i>Information Processing &amp; Management</i>,
+    2025, 62(3): 104048.
+    (<b>CCF B</b>)
+  </li>
+
+  <li class="pub-item" data-topic="kg">
+    <b>Li Z</b>, Jian Y, et al.
+    Text-enhanced Knowledge Graph Representation Learning with Local Structure[J].
+    <i>Information Processing &amp; Management</i>,
+    2024, 61(5): 103797.
+    (<b>CCF B</b>)
+  </li>
+
+  <li class="pub-item" data-topic="kg">
+    <b>Li Z</b>, Chen L, Jian Y, et al.
+    Aggregation or Separation? Adaptive Embedding Message Passing for Knowledge Graph Completion[J].
+    <i>Information Sciences</i>,
+    2025, 691: 121639.
+    (<b>CCF B</b>)
+  </li>
+
+  <li class="pub-item" data-topic="kg">
+    <b>Li Z</b>, Zhao Y, Zhang Y, et al.
+    Multi-relational Graph Attention Networks for Knowledge Graph Completion[J].
+    <i>Knowledge-Based Systems</i>,
+    2022, 251: 109262.
+    (<b>CCF C</b>)
+  </li>
 
 
-    <li>
-        <b>Li Z</b>, Chen L, Yi J, et al. 
-        KeenKT: Knowledge Mastery-State Disambiguation for Knowledge Tracing[C]. 
-        <i>Proceedings of the AAAI Conference on Artificial Intelligence</i>, 
-        2026. 
-        (<b>CCF A, Accepted</b>)
-    </li>
-    
-
-
-    <li>
-        <b>Li Z</b>, Qiu F, Wang Y, et al, . 
-        Integrating Object Interaction Self-Attention and GAN-Based Debiasing for Visual Question Answering[J].
-        <i>IEEE Transactions on Multimedia</i>,
-        2026.
-        (<b>CCF B, Accepted</b>)
-    </li>
-
-
-    <li>
-        Shi K, Zhang Y, Zhang M, et al, <b>Li Z*</b>. Structurally Refined Graph Transformer for Multimodal Recommendation[J]. 
-        <i>IEEE Transactions on Multimedia</i>, 
-        2025. 
-        (<b>CCF B, Accepted</b>)
-    </li>
-
-    <li>
-        Shi K, Zhang Y, Zhang M, et al, <b>Li Z*</b>. 
-        Heterogeneous Environment-aware Multimodal Recommendation with Modality Alignment[J]. 
-        <i>Information Fusion</i>, 
-        2026, 129: 103989.
-    </li>
-
-    <li>
-        Xiong C, Hu J, et al, <b>Li Z*</b>.
-        HiMod: Hierarchical Modeling with Graph Perturbation for Enhanced Inductive Knowledge Graph Reasoning[J].
-        <i>ACM Transactions on Knowledge Discovery from Data</i>,
-        2026.
-        (<b>CCF B, Accepted</b>)
-    </li>
-
-
-    <li>
-        Jian Y, Zhang M, et al, <b>Li Z*</b>. 
-        Adaptive Modality Interaction Transformer for Multimodal Knowledge Graph Completion[J]. 
-        <i>ACM Transactions on Knowledge Discovery from Data</i>, 
-        2025, 19(8): 1-24.
-        (<b>CCF B</b>)
-    </li>
-
-
-    <li>
-        <b>Li Z</b>, Chen L, Jian Y, et al.
-        Aggregation or Separation? Adaptive Embedding Message Passing for Knowledge Graph Completion[J]. 
-        <i>Information Sciences</i>,
-        2025, 691: 121639.
-        (<b>CCF B</b>)
-    </li>
-
-
-    <li>
-        Zhang Y, Luo X, Hu J, et al, <b>Li Z*</b>. 
-        Graph Structure Prefix Injection Transformer for Multi-modal Entity Alignment[J].
-        <i>Information Processing & Management</i>,
-        2025, 62(3): 104048.
-        (<b>CCF B</b>)
-    </li>
-
-
-    <li>
-        <b>Li Z</b>, Jian Y, Xue Z, et al. 
-        Text-enhanced Knowledge Graph Representation Learning with Local Structure[J]. 
-        <i>Information Processing & Management</i>,
-        2024, 61(5): 103797.
-        (<b>CCF B</b>)
-    </li>
-
-
-    <li>
-        Zhang Y, Lin J, Zhang M, et al, <b>Li Z*</b>. 
-        SCRA-VQA: Summarized Caption-Rerank for Augmented Large Language Models in Visual Question Answering[C].
-        <i>Proceedings of the 30th International Conference on Database Systems for Advanced Applications (DASFAA)</i>, 
-        2026: 37–52.
-        (<b>CCF B, Oral paper</b>)
-    </li>
-
-    <li>
-        Shi K, Zhang Y, Zhang M, et al, <b>Li Z*</b>. 
-        Noise-enhanced Graph Contrastive Learning for Multimodal Recommendation Systems[J]. 
-        <i>Knowledge-Based Systems</i>, 
-        2025, 324: 113766. 
-        (<b>CCF C</b>)
-    </li>
-
-
-    <li>
-        <b>Li Z</b>, Zhao Y, Zhang Y, et al. 
-        Multi-relational Graph Attention Networks for Knowledge Graph Completion[J]. 
-        <i>Knowledge-Based Systems</i>,
-        2022, 251: 109262.
-        (<b>CCF C</b>)
-    </li>
-
-
-    <li>
+    <li class="pub-item" data-topic="kg">
         <b>Li Z</b>, Huang W, Gong X, et al. 
         Decoupled Semantic Graph Neural Network for Knowledge Graph Embedding[J].
         <i>Neurocomputing</i>, 
@@ -402,19 +429,176 @@ var _hmt = _hmt || [];
     </li>
 
 
-    <li>
+    <li class="pub-item" data-topic="kg">
         <b>Li Z</b>, Liu H, Zhang Z, et al.  
         Recalibration Convolutional Networks for Learning Interaction Knowledge Graph Embedding[J]. 
         <i>Neurocomputing</i>, 
         2021, 427: 118-130. 
-        (<b>CCF C</b>)
+        (<b> CCF C</b>)
     </li>
 
+  <!-- ===================== 知识问答方向 ===================== -->
+  <p class="pub-section" data-topic="vqa" style="text-align:center;padding-top:30px"><b>Question Answering</b></p>
 
+  <li class="pub-item" data-topic="vqa">
+    <b>Li Z</b>, Wang Y, Xiong C, et al.
+    MacVQA: Adaptive Memory Allocation and Global Noise Filtering for Continual Visual Question Answering[C].
+    <i>Proceedings of the AAAI Conference on Artificial Intelligence</i>,
+    2026.
+    (<b>CCF A, Accepted</b>)
+  </li>
 
+  <li class="pub-item" data-topic="vqa">
+    <b>Li Z</b>, Qiu F, Wang Y, et al.
+    Integrating Object Interaction Self-Attention and GAN-Based Debiasing for Visual Question Answering[J].
+    <i>IEEE Transactions on Multimedia</i>,
+    2026. DOI: 10.1109/TMM.2026.3651122.
+    (<b>CCF B</b>)
+  </li>
+
+  <li class="pub-item" data-topic="vqa">
+    Zhang Y, Lin J, Zhang M, et al, <b>Li Z*</b>.
+    SCRA-VQA: Summarized Caption-Rerank for Augmented Large Language Models in Visual Question Answering[C].
+    <i>Proceedings of the 30th International Conference on Database Systems for Advanced Applications (DASFAA)</i>,
+    2026: 37–52.
+    (<b>CCF B, Oral paper</b>)
+  </li>
+
+  <!-- ===================== 推荐系统方向 ===================== -->
+  <p class="pub-section" data-topic="rec" style="text-align:center;padding-top:30px"><b>Recommendation Systems</b></p>
+
+  <li class="pub-item" data-topic="rec">
+    <b>Li Z</b>, Chen L, Yi J, et al.
+    KeenKT: Knowledge Mastery-State Disambiguation for Knowledge Tracing[C].
+    <i>Proceedings of the AAAI Conference on Artificial Intelligence</i>,
+    2026.
+    (<b>CCF A, Accepted</b>)
+  </li>
+
+  <li class="pub-item" data-topic="rec">
+    Shi K, Zhang Y, Zhang M, et al, <b>Li Z*</b>.
+    Structurally Refined Graph Transformer for Multimodal Recommendation[J].
+    <i>IEEE Transactions on Multimedia</i>,
+    2025.
+    (<b>CCF B, Accepted</b>)
+  </li>
+
+  <li class="pub-item" data-topic="rec">
+    Shi K, Zhang Y, Zhang M, et al, <b>Li Z*</b>.
+    Heterogeneous Environment-aware Multimodal Recommendation with Modality Alignment[J].
+    <i>Information Fusion</i>,
+    2026, 129: 103989.
+  </li>
+
+  <li class="pub-item" data-topic="rec">
+    Shi K, Zhang Y, Zhang M, et al, <b>Li Z*</b>.
+    Noise-enhanced Graph Contrastive Learning for Multimodal Recommendation Systems[J].
+    <i>Knowledge-Based Systems</i>,
+    2025, 324: 113766.
+    (<b>CCF C</b>)
+  </li>
 
 
 </ol>
+
+<script>
+(function(){
+  const items = Array.from(document.querySelectorAll('.pub-item'));
+  const sections = Array.from(document.querySelectorAll('.pub-section'));
+  const topicFilters = document.getElementById('topicFilters');
+  const yearFilters = document.getElementById('yearFilters');
+
+  if (!items.length || !topicFilters || !yearFilters) return;
+
+  // 1) 提取年份（19xx/20xx）
+  const yearSet = new Set();
+  items.forEach(li => {
+    const text = li.innerText || li.textContent || '';
+    const match = text.match(/\b(19\d{2}|20\d{2})\b/);
+    const y = match ? match[1] : '';
+    if (y) {
+      li.dataset.year = y;
+      yearSet.add(y);
+    } else {
+      li.dataset.year = 'unknown';
+    }
+  });
+
+  // 2) 年份按钮：2024+ 单独列出，<=2023 合并
+  const years = Array.from(yearSet)
+    .map(y => Number(y))
+    .filter(n => !Number.isNaN(n))
+    .sort((a,b)=> b - a);
+
+  const hasLe2023 = years.some(y => y <= 2023);
+
+  years.filter(y => y >= 2024).forEach(y => {
+    const btn = document.createElement('button');
+    btn.className = 'pub-btn';
+    btn.type = 'button';
+    btn.dataset.year = String(y);
+    btn.textContent = String(y);
+    yearFilters.appendChild(btn);
+  });
+
+  if (hasLe2023) {
+    const btn = document.createElement('button');
+    btn.className = 'pub-btn';
+    btn.type = 'button';
+    btn.dataset.year = 'le2023';
+    btn.textContent = 'Before 2023';
+    yearFilters.appendChild(btn);
+  }
+
+  let currentTopic = 'all';
+  let currentYear = 'all';
+
+  function setActive(container, attr, value){
+    container.querySelectorAll('.pub-btn').forEach(b => {
+      if (b.dataset[attr] === value) b.classList.add('active');
+      else b.classList.remove('active');
+    });
+  }
+
+  function applyFilters(){
+    items.forEach(li => {
+      const okTopic = (currentTopic === 'all') || (li.dataset.topic === currentTopic);
+
+      const okYear = (currentYear === 'all')
+        || (currentYear === 'le2023'
+            ? (Number(li.dataset.year) <= 2023)
+            : (li.dataset.year === currentYear));
+
+      li.classList.toggle('pub-hidden', !(okTopic && okYear));
+    });
+
+    sections.forEach(sec => {
+      const t = sec.dataset.topic;
+      const hasVisible = items.some(li => li.dataset.topic === t && !li.classList.contains('pub-hidden'));
+      sec.classList.toggle('pub-hidden', !hasVisible);
+    });
+  }
+
+  topicFilters.addEventListener('click', (e) => {
+    const btn = e.target.closest('.pub-btn');
+    if (!btn) return;
+    currentTopic = btn.dataset.topic || 'all';
+    setActive(topicFilters, 'topic', currentTopic);
+    applyFilters();
+  });
+
+  yearFilters.addEventListener('click', (e) => {
+    const btn = e.target.closest('.pub-btn');
+    if (!btn) return;
+    currentYear = btn.dataset.year || 'all';
+    setActive(yearFilters, 'year', currentYear);
+    applyFilters();
+  });
+
+  applyFilters();
+})();
+</script>
+<!-- ===================== /Publications ===================== -->
 
 
 
