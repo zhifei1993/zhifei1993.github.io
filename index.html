@@ -703,7 +703,7 @@ var _hmt = _hmt || [];
   }
 
   let currentTopic = 'all';
-  let currentYear = 'all';
+  let currentYear = '2026';
 
   function setActive(container, attr, value){
     container.querySelectorAll('.pub-btn').forEach(b => {
@@ -746,6 +746,9 @@ var _hmt = _hmt || [];
     setActive(yearFilters, 'year', currentYear);
     applyFilters();
   });
+
+  setActive(topicFilters, 'topic', currentTopic);
+  setActive(yearFilters, 'year', currentYear);
 
   applyFilters();
 })();
@@ -819,7 +822,7 @@ $(function(){
 
 <br/>
 <font size="2" ; color="#A0A0A0" ;>
-    <p style="text-align:center">更新日期: 2026.05.03</p>
+    <p style="text-align:center">更新日期: 2026.06.01</p>
 </font>
 
 
